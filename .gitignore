@@ -1,0 +1,17 @@
+# mac classical folders
+Applications/
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Projects/
+Public/
+
+.DS_Store
+.Trash/
+.bash_history
+.viminfo
+
