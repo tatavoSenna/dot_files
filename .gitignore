@@ -7,11 +7,29 @@ Library/
 Movies/
 Music/
 Pictures/
-Projects/
 Public/
-
-.DS_Store
 .Trash/
+
+# projects
+Projects/
+.virtualenvs/
+.pip/
+
+# apps folders 
+.CFUserTextEncoding
+.android/
+.dropbox/
+.ssh/
+Dropbox (Parafernalia)/
+Dropbox (Pessoal)/
+
+OSX
+.DS_Store
+.profile.save
+
+Linux
 .bash_history
 .viminfo
+
+
 
