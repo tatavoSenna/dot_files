@@ -22,6 +22,9 @@ mkdir Projects;
 mkdir .virtualenvs;
 mysql.server start
 
+# Ansible
+brew install ansible;
+
 
 # # agile
 virtualenv /Users/tatavo/.virtualenvs/agile2;
@@ -60,5 +63,15 @@ source /~/.virtualenvs/woo/bin/activate
 cd wizard_of_odds/app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 pip intall -r requirements.txt
+
+#apliquei
+cd ~Projects
+virtualenv /Users/tatavo/.virtualenvs/apliquei;
+git clone git@github.com:parafernalia/apliquei.git;
+source ~/.virtualenvs/agile2/bin/activate
+export $PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+pip install -r requirements.txt
+
+
 
 
