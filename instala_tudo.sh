@@ -3,10 +3,10 @@ brew cask install dropbox;
 brew cask install google-chrome;
 brew cask install evernote;
 brew cask install sequel-pro;
-brew cask install gfxcardstatus;
-brew tap caskroom/versions
-brew cask install sublime-text3
-brew install mysql
+brew cask install kindle;
+brew tap caskroom/versions;
+brew cask install sublime-text3;
+brew install mysql;
 
 # # generate ssh
 # ssh-keygen -t rsa -C "tatavo.senna@gmail.com"
