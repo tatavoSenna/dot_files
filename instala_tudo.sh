@@ -4,6 +4,7 @@ brew cask install google-chrome;
 brew cask install evernote;
 brew cask install sequel-pro;
 brew cask install kindle;
+brew cask install vagrant;
 brew tap caskroom/versions;
 brew cask install sublime-text3;
 brew install mysql;
@@ -68,9 +69,11 @@ pip intall -r requirements.txt
 cd ~Projects
 virtualenv /Users/tatavo/.virtualenvs/apliquei;
 git clone git@github.com:parafernalia/apliquei.git;
-source ~/.virtualenvs/agile2/bin/activate
-export $PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-pip install -r requirements.txt
+source ~/.virtualenvs/agile2/bin/activate;
+postgres -D /usr/local/pgsql/data;
+createdb apliquei;
+export $PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin;
+pip install -r requirements.txt;
 
 
 
