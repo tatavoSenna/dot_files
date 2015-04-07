@@ -12,6 +12,9 @@ brew cask install sublime-text3;
 brew install mysql;
 brew cask intall pgadmin3
 
+# cocoa pods
+sudo gem install cocoapods
+
 # # generate ssh
 # ssh-keygen -t rsa -C "tatavo.senna@gmail.com"
 
