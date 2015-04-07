@@ -1,3 +1,6 @@
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+brew doctor;
+brew install caskroom/cask/brew-cask;
 brew cask install android-studio;
 brew cask install dropbox;
 brew cask install google-chrome;
@@ -7,13 +10,14 @@ brew cask install kindle;
 brew tap caskroom/versions;
 brew cask install sublime-text3;
 brew install mysql;
+brew cask intall pgadmin3
 
 # # generate ssh
 # ssh-keygen -t rsa -C "tatavo.senna@gmail.com"
 
 # # python / django
-curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py;
-python get-pip.py;
+# curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py;
+# sudo python get-pip.py;
 sudo pip install virtualenv;
 
 # projects
