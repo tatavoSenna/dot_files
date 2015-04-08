@@ -61,11 +61,16 @@ python manage.py migrate;
 
 #wizard of odds
 cd ~/Projects
+mkdir wod;
+cd wod;
+virtualenv python_environment;
+source python_environment/bin/activate
 git clone git@github.com:eoch-github/wizard_of_odds.git;
-virtualenv ~/.virtualenvs/woo;
-source /~/.virtualenvs/woo/bin/activate
 cd wizard_of_odds/app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-pip intall -r requirements.txt
+createdb woo
+sed -e 's/username=""/username="tatavo"/' -e 's/database=""/database="woo"/' settings_local.py.example > settings_local.py
+pip install -r requirements.txt
+make run_migration
 
 
