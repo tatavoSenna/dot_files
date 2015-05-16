@@ -51,7 +51,7 @@ cd Projects
 git clone git@github.com:parafernalia/blended_api.git;
 git clone git@github.com:parafernalia/blended_app.git;
 virtualenv /Users/tatavo/.virtualenvs/blended;
-source ~/.virtualenvs/agile2/bin/activate
+source ~/.virtualenvs/blended/bin/activate
 cd blended_api
 pip install -r requirements.txt;
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS blended";
