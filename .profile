@@ -13,3 +13,8 @@ alias pdir='cd /Users/tatavo/Projects'
 
 alias agenv=' source /Users/tatavo/.virtualenvs/agile2/bin/activate'
 alias agdir='cd /Users/tatavo/Projects/agile2'
+
+activate_ansible () {
+	source ~/Projects/ansible/hacking/env-setup
+	export ANSIBLE_HOSTS=~/Projects/ansible_inventory
+} 
