@@ -1,5 +1,6 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 brew doctor;
+brew install node
 brew install caskroom/cask/brew-cask;
 brew cask install android-studio;
 brew cask install dropbox;
@@ -69,6 +70,30 @@ git clone git@github.com:eoch-github/wizard_of_odds.git;
 cd wizard_of_odds/app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 createdb woo
+sed -e 's/username=""/username="tatavo"/' -e 's/database=""/database="woo"/' settings_local.py.example > settings_local.py
+pip install -r requirements.txt
+make run_migration
+
+#apliquei
+cd ~/Projects
+mkdir wod;
+cd wod;
+virtualenv python_environment;
+source python_environment/bin/activate
+git clone git@github.com:eoch-github/wizard_of_odds.git;
+cd wizard_of_odds/app
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+createdb apliquei
+echo DATABASES = { > local_settings.py ;
+echo    'default': { >> local_settings.py ;
+echo        'ENGINE': 'django.db.backends.postgresql_psycopg2', >> local_settings.py ;
+echo        'HOST': '127.0.0.1', >> local_settings.py ;
+echo        'NAME':'apliquei', >> local_settings.py ;
+echo        'USER':'tatavo', >> local_settings.py ;
+echo        'PASSWORD':'mikaju38', >> local_settings.py ;
+echo        'PORT':'5432' >> local_settings.py ;
+echo    } >> local_settings.py ;
+echo } >> local_settings.py ;
 sed -e 's/username=""/username="tatavo"/' -e 's/database=""/database="woo"/' settings_local.py.example > settings_local.py
 pip install -r requirements.txt
 make run_migration
