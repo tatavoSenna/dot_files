@@ -1,0 +1,5 @@
+Host homolog.blended.ezlearn.com.br
+ HostName homolog.blended.ezlearn.com.br
+ PreferredAuthentications publickey
+ User parafernalia
+ IdentityFile ~/ec2parafa.pem

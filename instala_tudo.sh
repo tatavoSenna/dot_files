@@ -58,6 +58,8 @@ git clone git@github.com:parafernalia/blended_app.git;
 virtualenv /Users/tatavo/.virtualenvs/blended;
 source ~/.virtualenvs/blended/bin/activate
 cd blended_api
+git remote add pearson ssh://homolog.blended.ezlearn.com.br/var/git/blended-homolog.git
+cat ~/instala_help_files/blended_repository_auth.txt  >> ~/.ssh/config
 pip install -r requirements.txt;
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS blended";
 cp ~/instala_help_files/agile_local_settings.py ~/Projects/blended_api/blended/local_settings.py
