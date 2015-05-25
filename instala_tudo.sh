@@ -16,6 +16,10 @@ brew cask intall pgadmin3
 # cocoa pods
 sudo gem install cocoapods
 
+#haml sass e cia
+sudo gem install haml
+sudo gem install compass
+
 # # generate ssh
 # ssh-keygen -t rsa -C "tatavo.senna@gmail.com"
 
