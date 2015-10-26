@@ -12,22 +12,24 @@ brew install mysql;
 # # generate ssh
 # ssh-keygen -t rsa -C "tatavo.senna@gmail.com"
 
-# # python / django
+# python / django
 curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py;
 python get-pip.py;
 sudo pip install virtualenv;
 
-# projects
+#projects
 cd ~
 mkdir Projects;
 mkdir .virtualenvs;
 mysql.server start
 
-# Ansible
-brew install ansible;
+#ansible
+cd Projects
+git clone git://github.com/ansible/ansible.git --recursive
+sudo pip install paramiko PyYAML Jinja2 httplib2 six
 
 
-# # agile
+# agile
 virtualenv /Users/tatavo/.virtualenvs/agile2;
 cd Projects
 git clone git@github.com:parafernalia/agile2.git;

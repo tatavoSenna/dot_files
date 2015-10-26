@@ -13,3 +13,6 @@ alias pdir='cd /Users/tatavo/Projects'
 
 alias agenv=' source /Users/tatavo/.virtualenvs/agile2/bin/activate'
 alias agdir='cd /Users/tatavo/Projects/agile2'
+
+
+source ~/Projects/ansible/hacking/env-setup -q
