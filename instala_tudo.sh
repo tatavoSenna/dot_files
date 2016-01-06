@@ -28,6 +28,11 @@ sudo gem install compass
 # sudo python get-pip.py;
 sudo pip install virtualenv;
 
+#ansible
+git clone git://github.com/ansible/ansible.git --recursive
+sudo pip install paramiko PyYAML Jinja2 httplib2 six
+
+
 # projects
 cd ~
 mkdir Projects;
