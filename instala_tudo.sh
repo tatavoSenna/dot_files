@@ -9,9 +9,15 @@ brew cask install evernote;
 brew cask install sequel-pro;
 brew cask install kindle;
 brew tap caskroom/versions;
-brew cask install sublime-text3;
+
 brew install mysql;
 brew cask intall pgadmin3
+
+#sublime-text3
+brew cask install sublime-text3;
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+git@github.com:alek-sys/sublimetext_indentxml.git
+
 
 # cocoa pods
 sudo gem install cocoapods
