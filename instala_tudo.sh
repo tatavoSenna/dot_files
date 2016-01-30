@@ -9,9 +9,8 @@ brew cask install evernote;
 brew cask install sequel-pro;
 brew cask install kindle;
 brew tap caskroom/versions;
-
 brew install mysql;
-brew cask intall pgadmin3
+brew cask install pgadmin3
 
 #sublime-text3
 brew cask install sublime-text3;
