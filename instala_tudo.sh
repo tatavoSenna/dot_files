@@ -12,6 +12,11 @@ brew tap caskroom/versions;
 brew install mysql;
 brew cask install pgadmin3
 
+# oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+cat .profile >> .zshrc
+chsh -s /bin/zsh
+
 #sublime-text3
 brew cask install sublime-text3;
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
