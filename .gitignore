@@ -1,36 +1,6 @@
-# mac classical folders
-Applications/
-Desktop/
-Documents/
-Downloads/
-Library/
-Movies/
-Music/
-Pictures/
-Public/
-.Trash/
-
-# projects
-Projects/
-.virtualenvs/
-.pip/
-
-# apps folders 
-.CFUserTextEncoding
-.android/
-.dropbox/
-.ssh/
-Dropbox (Parafernalia)/
-Dropbox (Pessoal)/
-Dropbox (Personal)/
-
-OSX
-.DS_Store
-.profile.save
-
-Linux
-.bash_history
-.viminfo
-
+*
+!instala_tudo.sh
+!.profile
+!instala_help_files/
 
 
