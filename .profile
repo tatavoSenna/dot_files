@@ -10,7 +10,7 @@ alias gdev='git checkout dev'
 
 alias runserver='python manage.py runserver'
  
-alias pdir='cd /Users/tatavo/Projects'
+alias pdir='cd ~/Projects'
 
 alias setup-ansible='source /Users/tatavo/Projects/ansible/hacking/env-setup'
 
