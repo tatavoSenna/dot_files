@@ -10,10 +10,7 @@ alias gdev='git checkout dev'
 
 alias runserver='python manage.py runserver'
  
-alias pdir='cd /Users/tatavo/Projects'
-
-alias agenv=' source /Users/tatavo/.virtualenvs/agile2/bin/activate'
-alias agdir='cd /Users/tatavo/Projects/agile2'
+alias pdir='cd ~/Projects'
 
 alias setup-ansible='source /Users/tatavo/Projects/ansible/hacking/env-setup'
 
@@ -25,3 +22,4 @@ function gtav {
     git push
     git push origin $1-$2
 }
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
