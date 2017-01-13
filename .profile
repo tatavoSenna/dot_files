@@ -17,10 +17,10 @@ alias setup-ansible='source /Users/tatavo/Projects/ansible/hacking/env-setup'
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
 
 function gtav {
-    git commit -m "VersionCode $1 VersionName $2"
-    git tag $1-$2
+    git commit -m "VersionName $1 VersionCode $2"
+    git tag v$1-$2
     git push
-    git push origin $1-$2
+    git push origin v$1-$2
 }
 
 function clean_merge_tool {
