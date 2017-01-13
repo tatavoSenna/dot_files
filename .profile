@@ -25,9 +25,11 @@ function gtav {
 
 function clean_merge_tool {
 	find . -name "*.orig" -type f -delete
-	find . -name "_BASE_" -type f -delete
-	find . -name "_REMOTE_" -type f -delete
-	find . -name "_LOCAL_" -type f -delete
+	find . -name "*_BASE_*" -type f -delete
+	find . -name "*_REMOTE_*" -type f -delete
+	find . -name "*_LOCAL_*" -type f -delete
+	find . -name "*_BACKUP_*" -type f -delete
+
 }
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
